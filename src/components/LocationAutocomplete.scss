@@ -1,0 +1,45 @@
+.LocationAutocomplete {
+  position: relative;
+
+  &__input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding-left: 4px;
+    transition: all 0.15s;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+
+    &:focus-within {
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 1px rgba(26, 115, 232, 0.2);
+    }
+  }
+
+  &__search-icon {
+    width: 16px;
+    height: 16px;
+    color: #9ca3af;
+    flex-shrink: 0;
+  }
+
+  &__input {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    outline: none;
+    background: transparent;
+    border: none;
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+}
